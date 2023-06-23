@@ -11,13 +11,6 @@ class Program
     }
     public static string ReverseWords(string s)
     {
-        var reversedWords = s.Split(' ', StringSplitOptions.RemoveEmptyEntries).Reverse();
-
-        var builder = new StringBuilder();
-        foreach (var word in reversedWords)
-        {
-            builder.Append(word + " ");
-        }
-        return builder.ToString().Trim();
+        return string.Join(' ', s.Split(' ' , StringSplitOptions.RemoveEmptyEntries).Reverse());
     }
 }
