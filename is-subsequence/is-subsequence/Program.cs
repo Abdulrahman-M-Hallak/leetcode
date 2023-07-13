@@ -10,7 +10,7 @@ internal class Program
     public static bool IsSubsequence(string text , string subText)
     {
         int i =0 , j =0 ;
-        while(i < text.Length)
+        while(i < text.Length && j < subText.Length)
         {
             if (text[i] == subText[j])
                 j++;
